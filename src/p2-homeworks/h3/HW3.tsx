@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import GreetingContainer from './GreetingContainer'
 import {v1} from "uuid";
 
+
 // types
 export type UserType = {
     _id: string // need to fix any
@@ -26,7 +27,9 @@ function HW3() {
             homeworks 3
 
             {/*should work (должно работать)*/}
-            <GreetingContainer users={users} addUserCallback={addUserCallback}/>
+            <GreetingContainer users={users} addUserCallback={addUserCallback}
+                // spanClassName={s.testSpanError}
+            />
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
