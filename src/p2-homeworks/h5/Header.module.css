@@ -1,0 +1,33 @@
+.link {
+    text-decoration: none;
+    color: #883380;
+    margin: 10px;
+}
+
+.link:hover {
+    color: gold;
+}
+
+.active {
+    color: darkviolet;
+}
+
+.block {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    background: rgb(0,36,20);
+    background: linear-gradient(90deg, rgba(0,36,20,0.6110819327731092) 0%, rgba(101,11,114,1) 52%, rgba(108,9,121,0.5522584033613445) 76%, rgba(255,115,0,0.835171568627451) 100%);
+}
+
+.header {
+    display: flex;
+    width: 250px;
+    transition-duration: 500ms;
+    transform: translate(-220px);
+}
+
+.header:hover {
+    transition-duration: 500ms;
+    transform: translate(0);
+}
