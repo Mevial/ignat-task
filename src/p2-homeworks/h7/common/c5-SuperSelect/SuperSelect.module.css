@@ -1,0 +1,33 @@
+.select {
+    width: 100px;
+    padding: 5px;
+    padding-right: 30px;
+
+    cursor: pointer;
+    appearance: none;
+    background-color: gold;
+
+    border: 2px inset rgb(118, 118, 118);
+    color: green;
+}
+
+.select:focus {
+    outline: none;
+    border: green solid 2px ;
+}
+
+.option {
+    color: gold;
+    background-color: green;
+}
+
+.option:checked {
+    color: gold;
+    background-color: green;
+}
+
+.option:hover {
+    box-shadow: 0 0 10px 100px #FED20F inset;
+    transition: all .2s ease-in-out;
+    background-color: red;
+}
