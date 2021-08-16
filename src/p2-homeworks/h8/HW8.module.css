@@ -1,0 +1,14 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-left: 10px;
+    color: green;
+    background-color: gold;
+}
+.button {
+    display: flex;
+    background-color: palevioletred;
+    width: 200px;
+    margin-left: 10px;
+}
