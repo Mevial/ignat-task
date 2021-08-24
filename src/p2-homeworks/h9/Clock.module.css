@@ -1,0 +1,7 @@
+.item {
+    margin-left: 10px;
+    color: green;
+}
+.item:hover {
+    color: darkviolet;
+}
