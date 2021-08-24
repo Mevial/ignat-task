@@ -7,25 +7,25 @@ function Clock() {
     const [show, setShow] = useState<boolean>(false)
 
     const stop = () => {
-        // stop
+        clearInterval(timerId) // stop
     }
     const start = () => {
         stop()
         const id: number = window.setInterval(() => {
-            // setDate
+            setDate(new Date()) // setDate
         }, 1000)
         setTimerId(id)
     }
 
     const onMouseEnter = () => {
-        // show
+        setShow(true) // show
     }
     const onMouseLeave = () => {
-        // close
+        setShow(false) // close
     }
 
-    const stringTime = 'Time' // fix with date
-    const stringDate = 'Date' // fix with date
+    const stringTime = date?.toLocaleTimeString() || <br/> // br нужен чтобы сайт не дергался
+    const stringDate = date?.toLocaleDateString() || <br/> // br нужен чтобы сайт не дергался
 
     return (
         <div>
@@ -36,10 +36,12 @@ function Clock() {
                 {stringTime}
             </div>
 
-            {show && (
+            {show ? (
                 <div>
                     {stringDate}
                 </div>
+            ) : (
+                <br/> //br не желателен, другой вариант установить высоту дивки
             )}
 
             <SuperButton onClick={start}>start</SuperButton>
