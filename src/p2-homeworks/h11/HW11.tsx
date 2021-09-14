@@ -31,7 +31,7 @@ function HW11() {
             <div>
                 <SuperDoubleRange onChangeRange={qwe}
                                   value={[value1, value2]}
-                                  disabled={false}
+                                  disabled={false} //value2<value1 || value1===value2?
                                   min={0}
                                   max={100}
                     // сделать так чтоб value1 и value2 изменялось
